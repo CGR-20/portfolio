@@ -1,4 +1,4 @@
-/* stylesheets/style.css */
+/* main stylesheet for all pages in website */
 :root{
   --bg: #0b0e14;
   --card:#121826;
@@ -45,8 +45,11 @@ header{position:sticky; top:0; backdrop-filter:saturate(180%) blur(8px); backgro
 .links a:hover{background:rgba(255,255,255,.06)}
 .hero{padding:72px 0 36px}
 .hero-grid{display:grid; grid-template-columns:1.2fr .8fr; gap:2rem; align-items:center}
+.portrait{background:var(--card); border:1px solid rgba(255,255,255,.06); border-radius:var(--radius); padding:1rem}
 
 /* screen-based css */
+
+/* activates if light mode activated */
 @media (prefers-color-scheme: light){
   :root{
     --bg:#f7f8fc; --card:#ffffff; --muted:#5b6476; --text:#121826;
@@ -54,6 +57,10 @@ header{position:sticky; top:0; backdrop-filter:saturate(180%) blur(8px); backgro
   }
 }
 
+/* applies when screen is <= px (tablets/small laptops) */
+@media (max-width:1000px){.grid{grid-template-columns:repeat(2,1fr)}}
+
+/* applies to small screens like phones */
 @media (max-width:900px){.hero-grid{grid-template-columns:1fr}}
 .title{font-size:clamp(1.8rem, 2.5vw + 1rem, 3rem); line-height:1.15; margin:0 0 .75rem}
 .subtitle{color:var(--muted); margin:0 0 1.25rem; max-width:60ch}
@@ -66,8 +73,7 @@ section h2{font-size:1.5rem; margin:0 0 .75rem}
 section p.lead{color:var(--muted); max-width:65ch}
 .grid{display:grid; gap:1rem; grid-template-columns:repeat(3,1fr)}
 
-@media (max-width:1000px){.grid{grid-template-columns:repeat(2,1fr)}}
-
+/* applies to very small screens like small phones */
 @media (max-width:640px){.grid{grid-template-columns:1fr}}
 .project{display:flex; flex-direction:column; gap:.75rem}
 .project .thumb{aspect-ratio:16/9; background:linear-gradient(135deg, rgba(106,166,255,.2), rgba(110,255,194,.2)); border-radius:12px; overflow:hidden; border:1px solid rgba(255,255,255,.07)}
