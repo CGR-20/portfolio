@@ -40,7 +40,7 @@ header {
 
 .nav {
   display:flex; 
-  align-items:center; 
+  align-items:center;
   justify-content:space-between; 
   height:64px
 }
@@ -106,7 +106,7 @@ img {
 .cta {
   display:flex; 
   gap:.75rem; 
-  flex-wrap:wrap
+  flex-wrap:wrap;
 }
 
 .btn {
