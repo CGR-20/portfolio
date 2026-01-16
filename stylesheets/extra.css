@@ -1,0 +1,48 @@
+/* activates if light mode activated */
+/*
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg:#f7f8fc; 
+    --card:#ffffff; 
+    --muted:#5b6476; 
+    --text:#121826;
+    --accent:#1f6fff; 
+    --accent-2:#0fb57a; 
+    --ring: rgba(31,111,255,.25);
+  }
+}
+*/
+
+
+/* applies when screen is <= px (tablets/small laptops) */
+@media (max-width:1000px) {
+  .grid {
+    grid-template-columns:repeat(2,1fr)
+  }
+
+  /*
+  .cta {
+    justify-content:center;
+  }
+  */
+}
+
+/* applies to small screens like phones */
+@media (max-width:900px) {
+  /*
+  .hero-grid {
+    grid-template-columns:1fr;
+  }
+  */
+}
+
+/* applies to very small screens like small phones */
+@media (max-width:640px) {
+  .grid {
+    grid-template-columns:1fr;
+  }
+
+  .hero-grid {
+    grid-template-columns:1fr;
+  }
+}
