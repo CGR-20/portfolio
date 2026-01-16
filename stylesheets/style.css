@@ -218,6 +218,10 @@ section p.lead {
   max-width:65ch
 }
 
+.active {
+  background-color: blue;
+}
+
 /* screen-based css */
 
 /* activates if light mode activated */
@@ -238,18 +242,31 @@ section p.lead {
   .grid {
     grid-template-columns:repeat(2,1fr)
   }
+
+  /*
+  .cta {
+    justify-content:center;
+  }
+  */
 }
 
 /* applies to small screens like phones */
 @media (max-width:900px) {
+  /*
   .hero-grid {
-    grid-template-columns:1fr
+    grid-template-columns:1fr;
   }
+  */
 }
 
 /* applies to very small screens like small phones */
 @media (max-width:640px) {
   .grid {
-    grid-template-columns:1fr
+    grid-template-columns:1fr;
+    background-color: green;
+  }
+
+  .hero-grid {
+    grid-template-columns:1fr;
   }
 }
