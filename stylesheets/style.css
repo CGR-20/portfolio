@@ -1,4 +1,5 @@
 /* main stylesheet for all pages in website */
+/* default css is for phone/small screens */
 
 * {
   box-sizing:border-box
@@ -86,7 +87,7 @@ footer {
 
 .hero-grid {
   display:grid; 
-  grid-template-columns:1.2fr .8fr; 
+  grid-template-columns:1fr;
   gap:2rem; 
   align-items:center
 }
@@ -134,7 +135,7 @@ img {
 .grid {
   display:grid; 
   gap:1rem; 
-  grid-template-columns:repeat(3,1fr)
+  grid-template-columns:1fr;
 }
 
 .project {
@@ -218,6 +219,8 @@ section p.lead {
   max-width:65ch
 }
 
+/* screen-based css */
+
 /* Tablet */
 @media (min-width: 480px) {
   main {
@@ -227,22 +230,26 @@ section p.lead {
 
 /* Small Laptop/Desktop */
 @media (min-width: 770px) {
-main {
+  main {
     background-color: red;
+  }
+
+  .grid {
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .hero-grid {
+    grid-template-columns:1.2fr .8fr;
   }
 }
 
 /* Desktop */ 
 @media (min-width: 1030px) {
-main {
+  main {
     background-color: purple;
   }
-}
 
-/*
-.active {
-  background-color: blue;
+  .grid {
+    grid-template-columns:repeat(3,1fr);
+  }
 }
-*/
-
-/* screen-based css */
