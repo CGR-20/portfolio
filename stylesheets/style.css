@@ -33,10 +33,11 @@ html,body {
 
 header {
   /* position:sticky; */
-  top:0; 
+  top:0;
   backdrop-filter:saturate(180%) blur(8px); 
   background:color-mix(in oklab, var(--bg) 85%, transparent); 
-  border-bottom:1px solid rgba(255,255,255,.06)
+  border-bottom:1px solid rgba(255,255,255,.06);
+  background-color: green;
 }
 
 .nav {
@@ -46,12 +47,19 @@ header {
   flex-direction:column; 
 }
 
+nav {
+  background-color: blue;
+}
+
 .brand {
   display:flex; 
   gap:.6rem; 
   align-items:center; 
   font-weight:700;
-  padding:1rem 1rem; 
+  /* padding:2rem 1rem; */
+  padding:1.5rem .75rem; 
+  /* font-size: 20px; */
+  font-size: 1.5rem;
 }
 
 .nav a {
@@ -75,9 +83,9 @@ header {
 }
 
 footer {
-  padding:30px 0 60px; 
+  padding:30px 0 30px; 
   color:var(--muted); 
-  text-align:center
+  text-align:center;
 }
 
 .footer-contact {
@@ -99,7 +107,8 @@ footer {
 }
 
 .hero {
-  padding:72px 0 36px
+  /* padding:72px 0 36px; */
+  padding: 1.5rem 0 1.5rem;
 }
 
 .hero-grid {
@@ -196,11 +205,13 @@ a {
   text-decoration:none
 }
 
+/*
 .title {
   font-size:clamp(1.8rem, 2.5vw + 1rem, 3rem); 
   line-height:1.15; 
   margin:0 0 .75rem
 }
+*/
 
 .subtitle {
   color:var(--muted); 
@@ -229,7 +240,7 @@ section p.lead {
   header {
     position:sticky;
   }
-  
+
   .nav {
     height:64px;
   }
@@ -243,6 +254,10 @@ section p.lead {
 @media (min-width: 770px) {
   .nav {
     flex-direction:row;
+  }
+
+  .brand {
+    padding: 0;
   }
 
   .hero-grid {
