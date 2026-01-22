@@ -33,22 +33,17 @@ html,body {
 
 header {
   /* position:sticky; */
-  top:0;
+  /* top:0; */
   backdrop-filter:saturate(180%) blur(8px); 
   background:color-mix(in oklab, var(--bg) 85%, transparent); 
   border-bottom:1px solid rgba(255,255,255,.06);
-  background-color: green;
 }
 
-.nav {
+.container-nav {
   display:flex; 
   align-items:center;
   justify-content:space-between; 
   flex-direction:column; 
-}
-
-nav {
-  background-color: blue;
 }
 
 .brand {
@@ -62,11 +57,11 @@ nav {
   font-size: 1.5rem;
 }
 
-.nav a {
+.container-nav a {
   opacity:.9
 }
 
-.nav a:hover {
+.container-nav a:hover {
   background:rgba(255,255,255,.06)
 }
 
@@ -241,7 +236,7 @@ section p.lead {
     position:sticky;
   }
 
-  .nav {
+  .container-nav {
     height:64px;
   }
   
@@ -252,7 +247,7 @@ section p.lead {
 
 /* Small Laptop/Desktop */
 @media (min-width: 770px) {
-  .nav {
+  .container-nav {
     flex-direction:row;
   }
 
