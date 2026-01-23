@@ -28,12 +28,12 @@ html,body {
 .container {
   max-width:var(--maxw); 
   margin:0 auto; 
-  padding:0 1rem
+  padding:0 1rem;
 }
 
 header {
   /* position:sticky; */
-  /* top:0; */
+  top:0; 
   backdrop-filter:saturate(180%) blur(8px); 
   background:color-mix(in oklab, var(--bg) 85%, transparent); 
   border-bottom:1px solid rgba(255,255,255,.06);
@@ -44,6 +44,8 @@ header {
   align-items:center;
   justify-content:space-between; 
   flex-direction:column; 
+  /* margin: 0 0 .5rem; */
+  margin-bottom: .5rem;
 }
 
 .brand {
@@ -51,10 +53,10 @@ header {
   gap:.6rem; 
   align-items:center; 
   font-weight:700;
-  /* padding:2rem 1rem; */
-  padding:1.5rem .75rem; 
-  /* font-size: 20px; */
   font-size: 1.5rem;
+  /* padding:1rem 0 1.25rem; */
+  padding:1rem .5rem 1.25rem;
+  border-radius:10px;
 }
 
 .container-nav a {
@@ -103,7 +105,7 @@ footer {
 
 .hero {
   /* padding:72px 0 36px; */
-  padding: 1.5rem 0 1.5rem;
+  padding: .5rem 0 1rem;
 }
 
 .hero-grid {
@@ -129,6 +131,7 @@ img {
   display:flex; 
   gap:.75rem; 
   flex-wrap:wrap;
+  justify-content: center;
 }
 
 .btn {
@@ -186,7 +189,8 @@ img {
 .skills {
   display:flex; 
   flex-wrap:wrap; 
-  gap:.5rem
+  gap:.5rem;
+  justify-content: center;
 }
 
 .chip {
@@ -236,8 +240,8 @@ section p.lead {
     position:sticky;
   }
 
-  .container-nav {
-    height:64px;
+  .brand {
+    padding:.5rem .75rem; 
   }
   
   .links {
@@ -248,6 +252,7 @@ section p.lead {
 /* Small Laptop/Desktop */
 @media (min-width: 770px) {
   .container-nav {
+    margin: auto;
     flex-direction:row;
   }
 
@@ -262,10 +267,18 @@ section p.lead {
   .grid {
     grid-template-columns:repeat(2,1fr);
   }
+
+  .cta {
+    justify-content: left;
+  }
 }
 
 /* Desktop */ 
 @media (min-width: 1030px) {
+  .container-nav {
+    height:64px;
+  }
+
   .grid {
     grid-template-columns:repeat(3,1fr);
   }
