@@ -105,7 +105,9 @@ footer {
 
 .hero {
   /* padding:72px 0 36px; */
-  padding: .5rem 0 1rem;
+  padding: 2rem 0 2rem;
+  text-align:center;
+  /* background-color: green; */
 }
 
 .hero-grid {
@@ -162,6 +164,10 @@ img {
   grid-template-columns:1fr;
 }
 
+.container-projects {
+  text-align: center;
+}
+
 .project {
   display:flex; 
   flex-direction:column; 
@@ -184,6 +190,10 @@ img {
 .project p {
   color:var(--muted); 
   margin:0
+}
+
+.container-skills {
+  text-align: center;
 }
 
 .skills {
@@ -229,7 +239,7 @@ section h2 {
 
 section p.lead {
   color:var(--muted); 
-  max-width:65ch
+  /* max-width:65ch */
 }
 
 /* screen-based css */
@@ -268,9 +278,23 @@ section p.lead {
     grid-template-columns:repeat(2,1fr);
   }
 
+  /*
   .cta {
     justify-content: left;
   }
+
+  .hero {
+    text-align:left;
+  }
+
+  .container-projects {
+    text-align: left;
+  }
+
+  .container-skills {
+    text-align: left;
+  }
+  */
 }
 
 /* Desktop */ 
