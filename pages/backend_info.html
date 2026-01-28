@@ -20,72 +20,185 @@
         <div class="hero-grid">
             <div>
             <h1 class="title">Backend Information</h1>
-            <p class="subtitle">Experienced in designing and implementing efficient code to solve complex problems and enhance system performance. Passionate about building user-friendly applications and reliable backend systems. Graduating with a B.S. in Computer Science from Utah Valley University in December 2024.</p>
+            <p class="subtitle">
+                When it comes to programming, my passion lies in backend 
+                development. I enjoy creating efficient, reliable, and 
+                scalable server-side applications that power the functionality
+                of web and software systems.
+                I revel in being given complex problems to solve, and I take 
+                pride in writing clean, maintainable code that allows me to 
+                easily edit, modify, and expand upon my work as needed.
+            </p>
             <div class="cta">
-                <!--
-                <a class="btn primary" href="#projects">See projects</a>
-                -->
-                <a class="btn primary" href="Carlos_Ramirez_Resume_2025.pdf" target="_blank" rel="noopener">View Resume</a>
+                <a class="btn primary" href="/resources/documents/Carlos_Ramirez_Resume_Backend.pdf" target="_blank" rel="noopener">View Resume</a>
             </div>
             </div>
             <div>
-            <div class="card">
-                <strong>Highlights</strong>
-                <ul>
-                <li>Graduating Dec 2024, B.S. Computer Science (UVU).</li>
-                <li>Experience with compilers, databases, and backend systems.</li>
-                <li>Proficient in Java, Python, C, C++, C#, SQL, React, HTML, CSS, JavaScript.</li>
-                </ul>
-            </div>
+          <div class="card">
+            <strong>Highlights</strong>
+              <p>Graduating Dec 2024, B.S. Computer Science (UVU).</p>
+              <p>Experience with compilers, databases, and backend systems.</p>
+              <p>Proficient in Java, Python, C, C++, C#, SQL, React, HTML, CSS, JavaScript.</p>
+          </div>
             </div>
         </div>
         </section>
 
         <!-- Projects -->
-        <section id="projects">
+        <section class="container-projects">
         <h2>Projects</h2>
-        <p class="lead">Some highlights from my academic and personal work.</p>
-        <div class="grid">
+        <p class="lead">
+            These projects highlight my skills and experience in backend 
+            development, showcasing my ability to create efficient and 
+            reliable server-side applications and systems. They demonstrate 
+            my proficiency in various backend technologies, database 
+            management, implementing design patterns, and project management.
+        </p>
+        <p class="lead">
+            (All projects are academic work done at Utah Valley 
+            University, and so some are made private in GitHub due to UVU's 
+            academic integrity policies. If you would like to see these 
+            projects, please contact me directly to get access.)
+        </p>
+        <div class="project-grid">
+
             <article class="project card">
+        <a href="https://github.com/CGR-20/Spring2024_CS4490_Compiler" target="_blank">
             <div class="thumb"></div>
+          </a>
             <div>
-                <h3>Online Store Website</h3>
-                <p>Designed a functional navigation bar and form elements with restrictions (checkboxes, dropdowns, etc.).</p>
-                <div class="skills"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div>
+                <h3>KXI Compiler Project</h3>
+                <p>
+                    Designed and implemented a compiler for KXI, a 
+                    custom, simplified Java-like language.
+                </p>
+                <p>
+                    Using lexical analysis, semantic checking, and AST 
+                    generation, the compiler translates KXI code into 
+                    custom assembly code
+                </p>
+                <p>
+                    (which is run though it's appropriate processor and 
+                    assembler that were written for another project).
+                </p>
+                <div class="skills">
+                    <span class="chip">Java</span>
+                    <span class="chip">C++</span>
+                    <span class="chip">Python</span>
+                    <span class="chip">ANTLR</span>
+                    <span class="chip">Shell</span>
+                    <span class="chip">Git</span>
+                </div>
             </div>
             </article>
+
             <article class="project card">
+            <a href="https://github.com/CGR-20/Fall2023_CS4380_Emulator-Assembler" target="_blank">
             <div class="thumb"></div>
+          </a>
             <div>
-                <h3>KXI Compiler</h3>
-                <p>Designed and implemented a custom compiler for KXI, a simplified Java-like language. Included lexical analysis, semantic checking, AST generation, and code generation using ANTLR.</p>
-                <div class="skills"><span class="chip">Java</span><span class="chip">ANTLR</span><span class="chip">Compilers</span></div>
+                <h3>Processor & Assembler Project</h3>
+                <p>
+                    The microprocessor, built in C++, emulates the process of 
+                    executing custom bytecode given to it via a bytecode file,
+                    which if written properly will execute a program.
+                </p>
+                <p>
+                    The assembler, built in Python, translates custom assembly 
+                    code into the bytecode that the processor can read and 
+                    execute.
+                </p>
+                <p>
+                    Both programs work together to allow users to write and 
+                    execute programs in a low-level assembly language.
+                </p>
+                <div class="skills">
+                    <span class="chip">C++</span>
+                    <span class="chip">Python</span>
+                    <span class="chip">Shell</span>
+                    <span class="chip">Git</span>
+                </div>
             </div>
             </article>
+
             <article class="project card">
+            <a href="https://github.com/CGR-20/Spring2023_CS3370_P6_Dynamic-Bit-Array" target="_blank">
             <div class="thumb"></div>
+          </a>
             <div>
-                <h3>SQLite Database Project</h3>
-                <p>Designed and implemented a relational database with optimized SQL queries and CRUD operations to manage data efficiently.</p>
-                <div class="skills"><span class="chip">SQLite</span><span class="chip">SQL</span><span class="chip">Database Design</span></div>
+                <h3>Dynamic Bit Array Project</h3>
+                <p>
+                    A program that implements a dynamic bit array data 
+                    structure, allowing for efficient storage and manipulation 
+                    of bits.
+                </p>
+                <p>
+                    It supports operations such as setting, clearing, toggling, 
+                    and querying individual bits, as well as resizing the array 
+                    dynamically as needed.
+                </p>
+                <p>
+                    This project demonstrates an understanding of low-level 
+                    data manipulation and memory management in C++.
+                </p>
+                <div class="skills">
+                    <span class="chip">C++</span>
+                    <span class="chip">Git</span>
+                </div>
             </div>
             </article>
+
+            <article class="project card">
+          <a href="https://github.com/CGR-20/Fall2022_CS3520_A4_Company-Database" target="_blank">
+            <div class="thumb"></div>
+          </a>
+          <div>
+            <h3>Company Database Project</h3>
+            <p>
+                A simple database showcasing the use of SQLite to manage
+                company employee data.
+            </p>
+            <p>
+                It includes tables for employees, departments, and roles,
+                along with SQL queries to perform CRUD operations that give .
+                insight into company data.
+            </p>
+            <p>
+                Shell scripts are used to set up the database and execute
+                various operations.
+            </p>
+            <div class="skills">
+                <span class="chip">SQLite</span>
+                <span class="chip">Shell</span>
+                <span class="chip">Git</span>
+            </div>
+          </div>
+        </article>
+
         </div>
         </section>
 
         <!-- Skills -->
-        <section id="skills">
+        <section class="container-skills">
         <h2>Skills</h2>
         <div class="skills">
-            <span class="chip">Object-Oriented Programming</span>
-            <span class="chip">C / C++ / C#</span>
-            <span class="chip">Java</span>
-            <span class="chip">Python</span>
-            <span class="chip">HTML / CSS / JavaScript / React</span>
-            <span class="chip">SQL (Integration & Queries)</span>
-            <span class="chip">Git</span>
-            <span class="chip">Testing & Debugging</span>
-            <span class="chip">Problem-solving</span>
+        <span class="chip">C</span>
+        <span class="chip">C++</span>
+        <span class="chip">C#</span>
+        <span class="chip">Java</span>
+        <span class="chip">Python</span>
+        <span class="chip">Kotlin</span>
+        <span class="chip">SQL</span>
+        <span class="chip">SQLite</span>
+        <span class="chip">Shell</span>
+        <span class="chip">Make</span>
+        <span class="chip">CMake</span>
+        <span class="chip">Git</span>
+        <span class="chip">Object-Oriented Programming</span>
+        <span class="chip">Database Design</span>
+        <span class="chip">Database Queries</span>
+        <span class="chip">Testing & Debugging</span>
+        <span class="chip">Problem-solving</span>
         </div>
         </section>
 
