@@ -91,7 +91,7 @@ footer {
   gap: 1rem;
   justify-content: center;
   margin-bottom: 0.5rem;
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
 }
 
 .footer-contact a {
