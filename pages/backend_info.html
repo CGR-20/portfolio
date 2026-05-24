@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../stylesheets/style.css">
+    <script src="../scripts/pages_header_footer_injection.js"></script>
+    <script src="../scripts/skills_injection.js"></script>
     </head>
     <body>
     <header id="header"></header>
@@ -191,30 +193,35 @@
         <!-- Skills -->
         <section class="container-skills">
         <h2>Skills</h2>
-        <div class="skills">
-        <span class="chip">C</span>
-        <span class="chip">C++</span>
-        <span class="chip">C#</span>
-        <span class="chip">Java</span>
-        <span class="chip">Python</span>
-        <span class="chip">Kotlin</span>
-        <span class="chip">SQL</span>
-        <span class="chip">SQLite</span>
-        <span class="chip">Shell</span>
-        <span class="chip">Make</span>
-        <span class="chip">CMake</span>
-        <span class="chip">Git</span>
-        <span class="chip">Object-Oriented Programming</span>
-        <span class="chip">Database Design</span>
-        <span class="chip">Database Queries</span>
-        <span class="chip">Testing & Debugging</span>
-        <span class="chip">Problem-solving</span>
-        </div>
+        <div class="skills"></div>
         </section>
 
     </main>
 
     <footer id="footer"></footer>
-    <script src="../scripts/pages_header_footer_injection.js"></script>
     </body>
+
+    <script>
+        skills = [
+        "C", 
+        "C++", 
+        "C#", 
+        "Java", 
+        "Python", 
+        "Kotlin", 
+        "SQL", 
+        "SQLite", 
+        "Shell", 
+        "Make", 
+        "CMake", 
+        "Git",
+        "Object-Oriented Programming",
+        "Database Design",
+        "Database Queries",
+        "Testing & Debugging",
+        "Problem-solving"
+        ];
+
+        addSkills(skills);
+    </script>
 </html>
